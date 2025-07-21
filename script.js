@@ -1,5 +1,5 @@
 // Typing effect
-const phrases = ["Software Engineer", "Frontend Learner", "C# & Java Developer"];
+const phrases = ["Software Engineer", "Frontend Developer", "C# & Java Developer"];
 let index = 0, i = 0, current = "";
 function type() {
   if (i < phrases[index].length) {

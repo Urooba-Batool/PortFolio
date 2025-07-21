@@ -1,192 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Urooba Batool</title>
-
-    <!-- box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Urooba Batool | Software Engineer Portfolio</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
     <!-- custom css -->
     <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
-    <!-- ========================= header design ============================= -->
-    <header class="header">
-        <a href="#" class="logo">Urooba Batool<span>.</span></a>
+    
+<!-- Dark mode toggle -->
+<button class="toggle-btn" onclick="toggleMode()">🌙 Dark Mode</button>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Hi, I'm <strong>Urooba Batool</strong></h1>
+      <h2>A <span class="typing"></span></h2>
+      <p class="hero-subtitle">Building clean, creative, and user-friendly digital experiences.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn">Contact Me</a>
+        <a href="cv.pdf" download class="btn"><i class="fas fa-download"></i> Download CV</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/Profile3.jpg" alt="Profile Photo">
+    </div>
+  </div>
+</section>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Skills</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <!-- =========================== header design ends ============================ -->
-
-    <!-- ============================ home section design ============================== -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Urooba Batool</h1>
-            <h3>And I'm a <span>Front-end Web Developer</span></h3>
-            <p>Feel free to explore my portfolio and get in touch if you’d like to collaborate or learn more about my work!</p>
-            <div class="social-media">
-                <!-- <a href="https://www.instagram.com/developer_web14/" target="_blank"><i class='bx bxl-instagram'></i></a> -->
-                <a href="https://pk.linkedin.com/in/urooba-batool-77b72a28a" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://github.com/Urooba-Batool" target="_blank"><i class='bx bxl-github' ></i></a>
-                <a href="mailto:uroobabatool06@gmail.com?" target="_blank"><i class='bx bxl-gmail' ></i></a>
-
-            </div>
-            <a href="links/expertise.pdf" class="btn" target="_blank">Download CV</a>
+<!-- About -->
+<section id="about" class="about container">
+    <h2 class="section-title">About Me</h2>
+    <p class="text-center mx-auto" style="max-width: 800px;">
+        Hello! I’m <strong>Urooba Batool</strong>, a passionate programmer and <strong>Software Engineering</strong> student
+         with a growing skill set in software development and web technologies. I enjoy solving problems 
+         through code and constantly learning new tools, languages, and concepts to sharpen my craft.<br>
+        I’ve built several academic and personal projects that showcase my understanding of programming 
+        fundamentals, <strong>object-oriented </strong>principles, and clean code practices. I have hands-on 
+        experience with <strong>C#, Java, HTML, CSS, </strong>and <strong>Bootstrap</strong>, which I’ve used 
+        to create interactive applications, simple games, and web pages.<br>
+        I’m particularly interested in building software that enhances user experiences and solves real-world 
+        problems. I aim to write code that is efficient, reliable, and easy to understand, while expanding my 
+        knowledge in <strong>JavaScript, databases,</strong> and <strong>frameworks</strong> to become a 
+        well-rounded developer.<br>
+        Beyond technical skills, I bring enthusiasm, a strong work ethic, and a willingness to learn from 
+        challenges. I value teamwork, clear communication, and continuous improvement — qualities I believe are
+         just as important as coding.<br>
+        I’m excited to explore internship and collaboration opportunities where I can contribute, gain 
+        experience, and grow alongside talented professionals. Feel free to browse my portfolio and reach out
+         — I’d love to connect!
+    </p>
+  </section>
+  
+  <!-- Skills -->
+  <section id="skills" class="skills container">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills">
+      <div class="skill">C#</div>
+      <div class="skill">Java</div>
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">Bootstrap</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">OOP Concepts</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill">Problem Solving</div>
+    </div>
+  </section>
+  
+  <!-- Projects -->
+  <section id="projects" class="projects container">
+    <h2 class="section-title">Projects</h2>
+    <div class="row justify-content-center">
+  
+      <div class="col-md-5 m-3">
+        <div class="project-card">
+          <img src="images/projects/project1.png" class="img-fluid" alt="GYM.">
+          <h4>GYM.</h4>
+          <p>A dynamic website promoting fitness with easy access to gym info, classes, trainers, and membership options.</p>
+          <div class="badges mb-2">
+            <span class="badge bg-success">HTML</span>
+            <span class="badge bg-success">CSS</span>
+            <span class="badge bg-success">Bootstrap 5</span>
+          </div>
+          <a href="https://github.com/Urooba-Batool/gymnastic-Project"><i class="fas fa-code"></i> View Repo</a><br>
+          <a href="https://gymnastic.netlify.app/" target="_blank"><i class='fas fa-link'></i> View Live Link</a>
         </div>
-
-        <div class="home-img">
-            <img src="images/home.png" alt="">
+      </div>
+      <div class="col-md-5 m-3">
+        <div class="project-card">
+          <img src="images/projects/project3.png" class="img-fluid" alt="ScentAura">
+          <h4>ScentAura</h4>
+          <p>A perfume website which sells perfumes of multiple brands covering a wide variety of scents for everyone.</p>
+          <div class="badges mb-2">
+            <span class="badge bg-success">HTML</span>
+            <span class="badge bg-success">CSS</span>
+            <span class="badge bg-success">Bootstrap 5</span>
+          </div>
+          <a href="https://github.com/Urooba-Batool/ScentAura-Website"><i class="fas fa-code"></i> View Repo</a><br>
+          <a href="https://scent-aura.netlify.app/" target="_blank"><i class='fas fa-link'></i> View Live Link</a>
         </div>
-    </section>
-    <!-- ======================== home section design ends ========================= -->
-
-    <!-- ============================ about section design ============================== -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/about.png" alt="">
+      </div>
+  
+      <div class="col-md-5 m-3">
+        <div class="project-card">
+          <img src="images/projects/cake studio.png" class="img-fluid" alt="CakeStudio">
+          <h4>CakeStudio</h4>
+          <p>A bakery website which sells cakes, cookies, cupcakes and other bakery items of their brand making it easy to order for everyone.</p>
+          <div class="badges mb-2">
+            <span class="badge bg-success">HTML</span>
+            <span class="badge bg-success">CSS</span>
+            <span class="badge bg-success">Bootstrap 5</span>
+            <span class="badge bg-success">JS</span>
+          </div>
+          <a href="https://github.com/Urooba-Batool/CakeStudio-Website"><i class="fas fa-code"></i> View Repo</a><br>
+          <a href="https://cakeestudio.netlify.app/" target="_blank"><i class='fas fa-link'></i> View Live Link</a>
         </div>
-
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Front-end Developer !</h3>
-            <p>Hello! I'm a passionate frontend developer with a strong foundation in HTML, CSS, JavaScript, and Bootstrap. My journey in web development is driven by a desire to create visually appealing and user-friendly websites.
-            <br>
-            Currently, I am expanding my skill set . . . . . </p>
-            <a href="links/about me.pdf" class="btn" target="_blank">Read More</a>
+      </div>
+      <div class="col-md-5 m-3">
+        <div class="project-card">
+          <img src="images/projects/project4.png" class="img-fluid" alt="Vampire Epidemic">
+          <h4>Vampire Epidemic - The City Crsis</h4>
+          <p>A puzzle-based application that challenges users to solve riddles and uncover hidden clues, enhancing logical thinking and problem-solving skills. The choices user made leads to different endings</p>
+          <div class="badges mb-2">
+            <span class="badge bg-success">C#</span>
+            <span class="badge bg-success">Windows Form</span>
+          </div>
+          <a href="https://github.com/Urooba-Batool/Vampire-Epidemic-CSharp"><i class="fas fa-code"></i> View Repo</a><br>
         </div>
-    </section>        
-    <!-- ============================ about section design ends ============================== -->
-
-    <!-- ============================ service section design ============================== -->
-    <section class="service" id="services">
-        <h2 class="heading">My <span>Skills</span></h2>
-
-        <div class="services-container">
-            <div class="services-box">
-                <i class='bx bxl-html5'></i>
-                <h3>HTML5</h3>
-                <p>I have a solid understanding of HTML, enabling me to structure web content effectively and create <br> well-organized, semantic web pages.</p>
-            </div>
-            <div class="services-box">
-                <i class='bx bxl-css3' ></i>
-                <h3>CSS3</h3>
-                <p>With my strong CSS skills, I can style websites to be visually appealing, ensuring they are responsive and perform well across various devices and screen sizes.</p>
-            </div>
-            <div class="services-box">
-                <i class='bx bxl-javascript' ></i>
-                <h3>Javascript</h3>
-                <p>My JavaScript proficiency allows me to add interactivity and dynamic features to websites, creating engaging user experiences.</p>
-            </div>
-            <div class="services-box">
-                <i class='bx bxl-bootstrap' ></i>
-                <h3>Bootstrap5</h3>
-                <p>I utilize Bootstrap to build responsive, mobile-first web projects quickly and efficiently, leveraging its powerful grid system and pre-designed components.</p>
-            </div>
-            <div class="services-box">
-                <i class='bx bxs-coin-stack'></i>
-                <h3>MySQL</h3>
-                <p>I have a working knowledge of MySQL, enabling me to manage and interact with databases effectively to store and retrieve web application data.</p>
-            </div>
-            <!-- <div class="services-box">
-                <i class='bx bxl-figma'></i>
-                <h3>Figma</h3>
-                <p>I have a working knowledge of MySQL, enabling me to manage and interact with databases effectively to store and retrieve web application data.</p>
-            </div> -->
-            <div class="services-box">
-                <i class='bx bxl-php' ></i>
-                <h3>php</h3>
-                <p>Currently, I am learning PHP to enhance my backend development skills, aiming to create more dynamic and data-driven websites for the user.</p>
-            </div>
+      </div>
+      <div class="col-md-5 m-3">
+        <div class="project-card">
+          <img src="images/projects/project5.png" class="img-fluid" alt="Decode And Discover">
+          <h4>Decode And Discover</h4>
+          <p>A quiz-based application that challenges users to solve coding related questions with a storyline, helping to understand coding concepts in better way.</p>
+          <div class="badges mb-2">
+            <span class="badge bg-success">C#</span>
+            <span class="badge bg-success">Windows Form</span>
+          </div>
+          <a href="https://github.com/Urooba-Batool/Decode-And-Discover-Csharp"><i class="fas fa-code"></i> View Repo</a><br>
         </div>
-    </section>
-    <!-- ============================ service section design ends ============================== -->
-
-    <!-- ============================ portfolio section design ============================== -->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">My Lastest <span>Projects</span></h2>
-
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="images/projects/project1.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>GYM.</h4>
-                    <p>A dynamic website promoting fitness with easy access to gym info, classes, trainers, and membership options.</p>
-                    <a href="https://gymnastic.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/projects/project2.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Plant Palace</h4>
-                    <p>A dynamic ecommerce website that sells plants and its related accessories while also providing other services to the customer.</p>
-                    <a href="https://plantpalace-contest.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/projects/project3.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>ScentAura</h4>
-                    <p>A perfume website which sells perfumes of multiple brands covering a wide variety of all sorts of scents for everyone.</p>
-                    <a href="https://scent-aura.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/projects/cake studio.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>CakeStudio</h4>
-                    <p>A perfume website which sells perfumes of multiple brands covering a wide variety of all sorts of scents for everyone.</p>
-                    <a href="https://cakeestudio.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            
-        </div>
-    </section>
-    <!-- ============================ portfolio section design ends ============================== -->
-
-    <!-- ============================ contact section design ============================== -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
+      </div>
+  
+    </div>
+  </section>
+  
+  <!-- Contact -->
+  <section id="contact" class="contact container">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
         <form action="https://formspree.io/f/xzzpwagq" method="post">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name" name="name">
-                <input type="email" placeholder="Email Address" name="email">
-            </div>
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number" name="phone">
-                <input type="text" placeholder="Email Subject" name="subject">
-            </div>
-            <textarea id="" cols="30" rows="10" placeholder="Your Message" name="message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Your Message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn w-100" style="background-color: #4CAF50; color: #fff;">Send Message</button>
         </form>
-    </section>
-    <!-- ============================ contact section design ends ============================== -->
-
-    <!-- ================================= footer design ==================================== -->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2024 by Urooba Batool | All Rights Reserved.</p>
+        <div class="text-center mt-4">
+          <p>Email: uroobabatool20@gmail.com 
+            <a href="https://www.linkedin.com/in/urooba-batool06/" target="_blank" class="mx-3 icon text-success"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="https://github.com/Urooba-Batool" target="_blank" class="text-success icon"><i class="fab fa-github fa-lg"></i></a>
+          </p>
         </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Urooba Batool. All rights reserved.</p>
+  </footer>
+  
 
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
-    </footer>
-
-
-    <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- custom javascrip -->
     <script src="script.js"></script>
 </body>
